@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Rumaisha Raghib</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Rumaisha Raghib Syahidah Siregar</div>
+        <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Rumaisha Raghib</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile" class="section">
+        <div class="profile-container">
+            <div class="profile-pic">
+                <img src="foto.jpg" alt="Rumaisha Raghib">
+            </div>
+            <div class="profile-text">
+                <p class="intro-text">Hello, I'm</p>
+                <h1 class="title">Rumaisha Raghib Syahidah Siregar</h1>
+                <p class="subtitle">Student of Information Technology at Universitas Sumatera Utara</p>
+                <div class="btn-container">
+                    <button class="btn btn-primary" onclick="downloadCV()">Download CV</button>
+                    <a href="#contact" class="btn btn-outline">Contact Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section education-section">
+        <p class="education-subtitle">My Academic Journey</p>
+        <h2>Education</h2>
+        <div class="education-cards">
+            <div class="education-card">
+                <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>Universitas Sumatera Utara</h3>
+                <p>2025 - Present</p>
+                <p><strong>Information Technology</strong></p>
+            </div>
+            <div class="education-card">
+                <div class="card-icon"><i class="fa-solid fa-school"></i></div>
+                <h3>SMAIT Al-Fityan Medan</h3>
+                <p>2022 - 2025</p>
+                <p>Science Program</p>
+            </div>
+            <div class="education-card">
+                <div class="card-icon"><i class="fa-solid fa-book"></i></div>
+                <h3>SMPIT Al-Fityan Medan</h3>
+                <p>2019 - 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="skills-wrapper">
+            <div class="skills-image">
+                <img src="skills.jpg" alt="Work Setup">
+            </div>
+            <div class="skills-content">
+                <h2 class="skills-title">SKILLS</h2>
+                <div class="skills-group">
+                    <div class="skills-tags">
+                        <span>PHP</span><span>HTML</span><span>JavaScript</span><span>CSS</span><span>MYSQL</span><span>Bootstrap</span><span>Tailwind</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3 class="group-title">Tools</h3>
+                    <div class="tools-tags">
+                        <span>Visual Studio Code</span><span>XAMPP</span><span>Web Hosting</span><span>Microsoft Office</span>
+                    </div>
+                </div>
+                <div class="skills-group">
+                    <h3 class="group-title">Languages</h3>
+                    <div class="language-item">
+                        <p>Indonesia : 100%</p>
+                        <div class="progress-bar"><div class="progress" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="language-item">
+                        <p>English : 60%</p>
+                        <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <p class="projects-subtitle">Browse My Recent</p>
+        <h2 class="projects-title">Projects</h2>
+        <div class="projects-container"> 
+            <div class="project-card">
+                <div class="project-img"><img src="p1.jpg" alt="Love Math"></div>
+                <div class="project-info">
+                    <h3>Love Math With Ica</h3>
+                    <p>An integrated educational web ecosystem with math tools and registration systems.</p>
+                    <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rumaisharaghibsrg/LoveMathWithIca" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://rumaisharaghibsrg.github.io/LoveMathWithIca/" target="_blank" class="btn-link"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="p2.jpg" alt="Muslimah Mode"></div>
+                <div class="project-info">
+                    <h3>Muslimah Mode</h3>
+                    <p>A responsive e-commerce landing page featuring a clean product catalog. Optimized using CSS Grid.</p>
+                    <div class="project-tech"><span>HTML</span><span>CSS Grid</span><span>Responsive</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rumaisharaghibsrg/Muslimah-Mode" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://rumaisharaghibsrg.github.io/Muslimah-Mode/" target="_blank" class="btn-link"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="p3.jpg" alt="Toko Cici Mey"></div>
+                <div class="project-info">
+                    <h3>Cici Mey Bakery System</h3>
+                    <p>A multi-page Management Information System for bakeries with admin tables and dashboards.</p>
+                    <div class="project-tech"><span>HTML</span><span>CSS</span><span>Navigation Logic</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/rumaisharaghibsrg/Toko-Bahan-Kue-Cici-Mey" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://rumaisharaghibsrg.github.io/Toko-Bahan-Kue-Cici-Mey/" target="_blank" class="btn-link"><i class="fa-solid fa-up-right-from-square"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img"><img src="p4.jpg" alt="Satu TI Portal"></div>
+                <div class="project-info">
+                    <h3>Satu TI - Academic Portal</h3>
+                    <p>A collaborative team project developed for the IT department using full-stack management systems.</p>
+                    <div class="project-tech"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>CSS</span></div>
+                    <div class="project-links">
+                        <a href="https://github.com/torolukman355-netizen/tubes_proweb" target="_blank" class="btn-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="PPT_SATU TI_Kelompok 3_KOMB.pdf" target="_blank" class="btn-link"><i class="fa-solid fa-file-pdf"></i> Presentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Let's connect!</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <i class="fa-solid fa-envelope"></i>
+                <p><a href="mailto:rumaisharaghib@gmail.com">rumaisharaghib@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <i class="fa-brands fa-linkedin"></i>
+                <p><a href="https://www.linkedin.com/in/rumaisha-raghib-syahidah-siregar-693154342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &#169; 2026 Rumaisha Raghib Syahidah Siregar. 251402034.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
